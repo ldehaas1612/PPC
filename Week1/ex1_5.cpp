@@ -2,22 +2,12 @@
 
 using std::cout;
 using std::endl;
-using std::string;
 
-int main(){
-    int length;
-    string userc;
+int main_1_5(){
+    cout << "Toets een Character in: " << endl;
+    char ch = std::cin.get();
 
-    cout << "Toets een lengte > 0" << endl;
-
-    std::getline(std::cin, userc);
-
-    length = std::stoi(userc);
-
-    if(length> 15){
-        length = 15;
-    }
-
-    cout << "De lengte is " << length << endl;
+    cout << ch << " + 32 = " << ch+32 << endl;
+    cout << ch << " + 32 = " << char(ch+32) << endl;
     return 0;
 }
